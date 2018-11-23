@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  VentaEntradas
-//
-//  Created by alumnos on 23/11/18.
-//  Copyright © 2018 Alvaro. All rights reserved.
-//
+
 
 import UIKit
 
