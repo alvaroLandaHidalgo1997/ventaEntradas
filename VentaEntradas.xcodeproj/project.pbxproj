@@ -44,8 +44,8 @@
 		7F49F56821A7FD57000510C4 = {
 			isa = PBXGroup;
 			children = (
-				7F49F57321A7FD58000510C4 /* VentaEntradas */,
 				7F49F57221A7FD58000510C4 /* Products */,
+				7F49F57321A7FD58000510C4 /* VentaEntradas */,
 			);
 			sourceTree = "<group>";
 		};
