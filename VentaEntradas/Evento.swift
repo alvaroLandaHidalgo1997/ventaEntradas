@@ -2,19 +2,23 @@
 //  Evento.swift
 //  VentaEntradas
 //
-//  Created by alumnos on 10/12/18.
-//  Copyright © 2018 Alvaro. All rights reserved.
+//  Created by Alvaro Landa on 12/1/19.
+//  Copyright © 2019 Alvaro. All rights reserved.
 //
 
 import UIKit
-class EventoCelda:UITableViewCell {
+
+class Evento {
+    var nombre: String
+    var imagen: UIImage!
+    var fecha: String
+    var precio: String
     
-    @IBOutlet weak var imagen: UIImageView!
-    @IBOutlet weak var sumador: UIStepper!
-    @IBOutlet weak var contador: UILabel!
-    @IBOutlet weak var fecha: UILabel!
-    @IBOutlet weak var precio: UILabel!
-    @IBAction func Comprar(_ sender: UIButton) {
-        
+    init(nombre: String, imagen: UIImage, fecha: String, precio: String){
+        self.nombre = nombre
+        self.imagen = imagen
+        self.fecha = fecha
+        self.precio = precio
     }
+    
 }

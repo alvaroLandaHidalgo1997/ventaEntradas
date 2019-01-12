@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fcf-Gm-UMH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fcf-Gm-UMH">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +25,7 @@
                                 <navigationItem title="Eventos chachis" id="3FE-Le-sqS">
                                     <barButtonItem key="rightBarButtonItem" style="plain" id="sAe-hU-dUM">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LXt-ZM-Vua">
-                                            <rect key="frame" x="215" y="7" width="89" height="30"/>
+                                            <rect key="frame" x="215" y="10" width="89" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Mis entradas"/>
                                             <connections>
@@ -38,7 +37,7 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="127" id="0w4-qv-vWm" customClass="EventoCelda" customModule="VentaEntradas" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="evento" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="127" id="0w4-qv-vWm" customClass="EventoCelda" customModule="VentaEntradas" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="94" width="320" height="127"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0w4-qv-vWm" id="tox-do-ix1">
@@ -81,6 +80,12 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOe-Kk-IWS">
+                                            <rect key="frame" x="213" y="58" width="43" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="NC4-o2-lqv" secondAttribute="trailing" constant="38" id="71N-u9-wOZ"/>
@@ -94,11 +99,15 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="7DW-hs-hzZ" secondAttribute="trailing" constant="128" id="Ss3-8F-ua8"/>
                                         <constraint firstItem="lEB-5B-dsA" firstAttribute="leading" secondItem="ZeU-M4-2xX" secondAttribute="trailing" constant="8" id="Wga-ez-qcd"/>
                                         <constraint firstItem="7DW-hs-hzZ" firstAttribute="leading" secondItem="ZeU-M4-2xX" secondAttribute="trailing" constant="15" id="de2-2J-32e"/>
+                                        <constraint firstItem="NC4-o2-lqv" firstAttribute="top" secondItem="bOe-Kk-IWS" secondAttribute="bottom" constant="8" id="fyG-3F-6Na"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="bOe-Kk-IWS" secondAttribute="trailing" constant="48" id="g64-HM-tJZ"/>
                                         <constraint firstItem="NC4-o2-lqv" firstAttribute="top" secondItem="wvD-FI-c9S" secondAttribute="bottom" constant="41" id="i7W-bG-4Jt"/>
                                         <constraint firstItem="lEB-5B-dsA" firstAttribute="top" secondItem="tox-do-ix1" secondAttribute="topMargin" constant="10" id="le6-dc-AUu"/>
+                                        <constraint firstItem="bOe-Kk-IWS" firstAttribute="leading" secondItem="7DW-hs-hzZ" secondAttribute="trailing" constant="37" id="r7E-cc-DN9"/>
                                         <constraint firstItem="NC4-o2-lqv" firstAttribute="leading" secondItem="BhM-hd-Y2C" secondAttribute="trailing" constant="41" id="tlJ-RW-dxs"/>
                                         <constraint firstAttribute="bottom" secondItem="NC4-o2-lqv" secondAttribute="bottom" constant="9.5" id="umg-Dh-DGO"/>
                                         <constraint firstItem="7DW-hs-hzZ" firstAttribute="top" secondItem="lEB-5B-dsA" secondAttribute="bottom" constant="8" id="wFF-5d-vuR"/>
+                                        <constraint firstItem="bOe-Kk-IWS" firstAttribute="top" secondItem="lEB-5B-dsA" secondAttribute="bottom" constant="8" id="wOz-nZ-3H1"/>
                                         <constraint firstItem="ZeU-M4-2xX" firstAttribute="leading" secondItem="tox-do-ix1" secondAttribute="leadingMargin" id="xfY-Vb-mw9"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -106,6 +115,7 @@
                                     <outlet property="contador" destination="wvD-FI-c9S" id="OcK-74-0gy"/>
                                     <outlet property="fecha" destination="7DW-hs-hzZ" id="yc2-jM-T5U"/>
                                     <outlet property="imagen" destination="ZeU-M4-2xX" id="604-Uj-b3o"/>
+                                    <outlet property="nonbre" destination="bOe-Kk-IWS" id="2iB-6z-cs4"/>
                                     <outlet property="precio" destination="BhM-hd-Y2C" id="bx1-aF-YNU"/>
                                     <outlet property="sumador" destination="lEB-5B-dsA" id="jwV-PI-Udp"/>
                                 </connections>
@@ -128,7 +138,7 @@
             <objects>
                 <navigationController id="fcf-Gm-UMH" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="64V-II-eh6">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
