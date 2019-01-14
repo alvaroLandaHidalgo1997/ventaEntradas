@@ -22,8 +22,8 @@ class ViewController: UITableViewController {
         let foto3 = UIImage(named: "red hot chilly peppers")
         
         let evento1 = Evento(nombre: "Black Veil Brides", imagen: foto1!, fecha:"24/4/19", precio:" 25 $")
-        let evento2 = Evento(nombre: "Black Veil Brides", imagen: foto2!, fecha:"24/4/19", precio:" 25 $")
-        let evento3 = Evento(nombre: "Black Veil Brides", imagen: foto3!, fecha:"24/4/19", precio:" 25 $")
+        let evento2 = Evento(nombre: "Japan weekend", imagen: foto2!, fecha:"29/6/19", precio:" 10 $")
+        let evento3 = Evento(nombre: "red hot chilly peppers", imagen: foto3!, fecha:"16/4/19", precio:" 25 $")
         
         
         

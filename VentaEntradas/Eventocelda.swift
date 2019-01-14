@@ -15,6 +15,7 @@ class EventoCelda:UITableViewCell {
     @IBOutlet weak var fecha: UILabel!
     @IBOutlet weak var precio: UILabel!
     @IBOutlet weak var nombre: UILabel!
+    
     @IBAction func Comprar(_ sender: UIButton) {
         
     }
