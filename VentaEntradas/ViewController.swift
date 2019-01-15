@@ -4,9 +4,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     var eventos = [Evento]();
-
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         cargarElementos()
@@ -24,10 +22,6 @@ class ViewController: UITableViewController {
         let evento1 = Evento(nombre: "Black Veil Brides", imagen: foto1!, fecha:"24/4/19", precio:" 25 $")
         let evento2 = Evento(nombre: "Japan weekend", imagen: foto2!, fecha:"29/6/19", precio:" 10 $")
         let evento3 = Evento(nombre: "red hot chilly peppers", imagen: foto3!, fecha:"16/4/19", precio:" 25 $")
-        
-        
-        
-        
         eventos = [evento1, evento2, evento3]
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,5 +44,10 @@ class ViewController: UITableViewController {
         cell.precio.text = evento.precio;
         return cell
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is MisEntradasController{
+            let MisEntradas = segue.destination as! MisEntradasController
+            
+        }
+    }
 }
