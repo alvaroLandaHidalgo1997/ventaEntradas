@@ -3,8 +3,12 @@
 import UIKit
 
 class ViewController: UITableViewController {
+    @IBAction func MisEntradasButton(_ sender: Any) {performSegue(withIdentifier: "MisEntradasButton", sender: sender)
+        
+    }
     var eventos = [Evento]();
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         cargarElementos()
@@ -44,10 +48,5 @@ class ViewController: UITableViewController {
         cell.precio.text = evento.precio;
         return cell
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination is MisEntradasController{
-            let MisEntradas = segue.destination as! MisEntradasController
-            
-        }
-    }
+
 }

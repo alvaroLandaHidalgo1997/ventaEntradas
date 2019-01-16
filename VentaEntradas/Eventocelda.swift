@@ -10,13 +10,12 @@ import UIKit
 class EventoCelda:UITableViewCell {
     
     @IBOutlet weak var imagen: UIImageView!
-
     @IBOutlet weak var contador: UITextField!
     @IBOutlet weak var fecha: UILabel!
     @IBOutlet weak var precio: UILabel!
     @IBOutlet weak var nombre: UILabel!
-    
     @IBAction func Comprar(_ sender: UIButton) {
-        
+        var entradaComprada = MiEntrada2(nombre: nombre.text!,fecha: fecha.text!, imagen: imagen.image!);
+        misEntradasCompradas.append(entradaComprada)
     }
 }

@@ -8,10 +8,8 @@
 
 import UIKit
 
-class MiEntrada: UITableViewCell {
+class MiEntradaCelda: UITableViewCell {
     @IBOutlet weak var Foto: UIImageView!
     @IBOutlet weak var nombreeEvento: UILabel!
     @IBOutlet weak var fecha: UILabel!
-    @IBAction func Verentrada(_ sender: Any) {
-    }
 }
