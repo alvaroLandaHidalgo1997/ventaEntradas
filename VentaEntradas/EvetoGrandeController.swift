@@ -7,8 +7,16 @@
 //
 
 import UIKit
+
+
 class EventoGrande: UIViewController{
     
-    @IBOutlet weak var imagen: UIImageView!
-    @IBOutlet weak var fecha: UILabel!
+
+    @IBOutlet weak var imagengrupo: UIImageView!
+    
+    @IBOutlet weak var QRImage: UIImageView!
+    
+    @IBOutlet weak var nombregrupo: UILabel!
+    
+    
 }

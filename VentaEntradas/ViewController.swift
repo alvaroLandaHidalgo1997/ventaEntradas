@@ -7,8 +7,6 @@ class ViewController: UITableViewController {
         
     }
     var eventos = [Evento]();
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         cargarElementos()

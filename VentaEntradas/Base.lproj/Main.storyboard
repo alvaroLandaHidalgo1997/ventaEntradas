@@ -205,7 +205,7 @@
                                     <outlet property="Foto" destination="lHy-xi-nNb" id="dFn-lw-gWP"/>
                                     <outlet property="fecha" destination="e8x-ru-msN" id="dZG-JR-VfG"/>
                                     <outlet property="nombreeEvento" destination="iIt-RL-h2C" id="O3U-Tp-ljD"/>
-                                    <segue destination="VBa-zL-C8c" kind="show" id="mpx-uq-WXF"/>
+                                    <segue destination="VBa-zL-C8c" kind="show" id="JlO-m3-4H6"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -227,14 +227,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBI-5O-5kO">
-                                <rect key="frame" x="31" y="344" width="81" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Codigo " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pam-JS-a3z">
-                                <rect key="frame" x="31" y="400" width="262" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBI-5O-5kO">
+                                <rect key="frame" x="31" y="344" width="183" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -245,24 +239,29 @@
                                     <constraint firstAttribute="height" constant="128" id="1nV-pQ-b6k"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o0K-Sd-dam">
+                                <rect key="frame" x="124" y="228" width="90" height="90"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="9cF-A2-j6R" firstAttribute="bottom" secondItem="Pam-JS-a3z" secondAttribute="bottom" constant="59" id="0TG-hY-NnF"/>
-                            <constraint firstItem="Pam-JS-a3z" firstAttribute="top" secondItem="BBI-5O-5kO" secondAttribute="bottom" constant="35" id="5cG-Zt-lUg"/>
                             <constraint firstItem="mCX-al-4p0" firstAttribute="top" secondItem="dLL-uU-ufh" secondAttribute="topMargin" constant="14" id="7lE-hc-xnp"/>
-                            <constraint firstItem="9cF-A2-j6R" firstAttribute="trailing" secondItem="BBI-5O-5kO" secondAttribute="trailing" constant="208" id="Du2-2J-HVl"/>
-                            <constraint firstItem="9cF-A2-j6R" firstAttribute="trailing" secondItem="Pam-JS-a3z" secondAttribute="trailing" constant="27" id="PVV-Px-NH5"/>
-                            <constraint firstItem="Pam-JS-a3z" firstAttribute="leading" secondItem="9cF-A2-j6R" secondAttribute="leading" constant="31" id="SA7-8D-6Au"/>
+                            <constraint firstItem="o0K-Sd-dam" firstAttribute="leading" secondItem="9cF-A2-j6R" secondAttribute="leading" constant="124" id="FIv-iW-7S7"/>
+                            <constraint firstItem="BBI-5O-5kO" firstAttribute="top" secondItem="o0K-Sd-dam" secondAttribute="bottom" constant="26" id="SnE-fj-jWS"/>
+                            <constraint firstItem="o0K-Sd-dam" firstAttribute="top" secondItem="mCX-al-4p0" secondAttribute="bottom" constant="22" id="Tfc-Eb-Xut"/>
+                            <constraint firstItem="9cF-A2-j6R" firstAttribute="bottom" secondItem="BBI-5O-5kO" secondAttribute="bottom" constant="115" id="ZBr-0T-hn6"/>
                             <constraint firstItem="9cF-A2-j6R" firstAttribute="trailing" secondItem="mCX-al-4p0" secondAttribute="trailing" constant="38" id="cTA-Te-fhR"/>
+                            <constraint firstItem="9cF-A2-j6R" firstAttribute="trailing" secondItem="BBI-5O-5kO" secondAttribute="trailing" constant="106" id="fBQ-kz-JbO"/>
+                            <constraint firstItem="9cF-A2-j6R" firstAttribute="trailing" secondItem="o0K-Sd-dam" secondAttribute="trailing" constant="106" id="fE9-4D-tZY"/>
                             <constraint firstItem="mCX-al-4p0" firstAttribute="leading" secondItem="9cF-A2-j6R" secondAttribute="leading" constant="42" id="pb4-NC-oqw"/>
                             <constraint firstItem="BBI-5O-5kO" firstAttribute="leading" secondItem="9cF-A2-j6R" secondAttribute="leading" constant="31" id="s18-qd-4Th"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9cF-A2-j6R"/>
                     </view>
                     <connections>
-                        <outlet property="fecha" destination="BBI-5O-5kO" id="lEO-Jg-GDr"/>
-                        <outlet property="imagen" destination="mCX-al-4p0" id="h8B-me-1n6"/>
+                        <outlet property="QRImage" destination="o0K-Sd-dam" id="j7T-4v-SlO"/>
+                        <outlet property="imagengrupo" destination="mCX-al-4p0" id="fLz-6G-Tze"/>
+                        <outlet property="nombregrupo" destination="BBI-5O-5kO" id="Qu7-jU-Z0M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vrs-XJ-DT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
