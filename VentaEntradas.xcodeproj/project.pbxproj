@@ -15,6 +15,7 @@
 		7F49F57A21A7FD58000510C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F49F57821A7FD58000510C4 /* Main.storyboard */; };
 		7F49F57C21A7FD59000510C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F49F57B21A7FD59000510C4 /* Assets.xcassets */; };
 		7F49F57F21A7FD59000510C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F49F57D21A7FD59000510C4 /* LaunchScreen.storyboard */; };
+		97B8F11621EE60570009575E /* MiEntrada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B8F11521EE60570009575E /* MiEntrada.swift */; };
 		97BD1C1821EA5E2700BAFBA1 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BD1C1721EA5E2700BAFBA1 /* Evento.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		7F49F57B21A7FD59000510C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F49F57E21A7FD59000510C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F49F58021A7FD59000510C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B8F11521EE60570009575E /* MiEntrada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiEntrada.swift; sourceTree = "<group>"; };
 		97BD1C1721EA5E2700BAFBA1 /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				7F49F58021A7FD59000510C4 /* Info.plist */,
 				7F07479F21BE9AE700972187 /* Eventocelda.swift */,
 				97BD1C1721EA5E2700BAFBA1 /* Evento.swift */,
+				97B8F11521EE60570009575E /* MiEntrada.swift */,
 				7F49129621C121A1008DDF12 /* MisEntradasController.swift */,
 				7F49129821C121CC008DDF12 /* EvetoGrandeController.swift */,
 			);
@@ -150,6 +153,7 @@
 				97BD1C1821EA5E2700BAFBA1 /* Evento.swift in Sources */,
 				7F0747A021BE9AE700972187 /* Eventocelda.swift in Sources */,
 				7F49129921C121CC008DDF12 /* EvetoGrandeController.swift in Sources */,
+				97B8F11621EE60570009575E /* MiEntrada.swift in Sources */,
 				7F49129721C121A1008DDF12 /* MisEntradasController.swift in Sources */,
 				7F49F57721A7FD58000510C4 /* ViewController.swift in Sources */,
 				7F49F57521A7FD58000510C4 /* AppDelegate.swift in Sources */,

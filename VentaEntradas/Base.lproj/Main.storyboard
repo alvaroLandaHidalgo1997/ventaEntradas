@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fcf-Gm-UMH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fcf-Gm-UMH">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -144,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="-1016" y="130"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Mis Entradas Controller-->
         <scene sceneID="Z4c-xS-Hz3">
             <objects>
-                <tableViewController id="GYU-Mt-5kr" sceneMemberID="viewController">
+                <tableViewController id="GYU-Mt-5kr" customClass="MisEntradasController" customModule="VentaEntradas" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7J2-kp-P6b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,7 +159,7 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="81" id="OqR-Xz-wPG">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="81" id="OqR-Xz-wPG" customClass="MiEntrada" customModule="VentaEntradas" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="320" height="81"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OqR-Xz-wPG" id="jpx-lq-adz">
@@ -186,6 +185,7 @@
                                             <rect key="frame" x="266" y="25" width="30" height="30"/>
                                             <state key="normal" title="Ver"/>
                                             <connections>
+                                                <action selector="Verentrada:" destination="OqR-Xz-wPG" eventType="touchUpInside" id="8Ej-5y-ab3"/>
                                                 <segue destination="VBa-zL-C8c" kind="show" id="tdA-jJ-Qc8"/>
                                             </connections>
                                         </button>
@@ -207,6 +207,12 @@
                                         <constraint firstItem="M8d-Zx-AUW" firstAttribute="top" secondItem="jpx-lq-adz" secondAttribute="topMargin" constant="14" id="uhE-bD-cZD"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="Foto" destination="lHy-xi-nNb" id="dFn-lw-gWP"/>
+                                    <outlet property="fecha" destination="e8x-ru-msN" id="dZG-JR-VfG"/>
+                                    <outlet property="nombreeEvento" destination="iIt-RL-h2C" id="O3U-Tp-ljD"/>
+                                    <outlet property="ver" destination="M8d-Zx-AUW" id="3X8-Q1-izw"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
