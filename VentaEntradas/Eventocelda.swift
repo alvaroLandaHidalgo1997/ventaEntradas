@@ -10,8 +10,8 @@ import UIKit
 class EventoCelda:UITableViewCell {
     
     @IBOutlet weak var imagen: UIImageView!
-    @IBOutlet weak var sumador: UIStepper!
-    @IBOutlet weak var contador: UILabel!
+
+    @IBOutlet weak var contador: UITextField!
     @IBOutlet weak var fecha: UILabel!
     @IBOutlet weak var precio: UILabel!
     @IBOutlet weak var nombre: UILabel!
